@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height:26px;
+    color: #333333;
+    background-color: #ffffff;
+    text-align: center;
+}
+.main-header {
+    color: #000000; 
+    background-color: #ffffff;
+}
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+.welcome {
+    background-image: url("../images/background.jpg");
+    background-color: #82B3D3;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+.description {
+    font-size: 22px;
+    line-height: 26px;
+}
+.advantages-list {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+.number {
+    font-size: 18px;
+    line-height: 21px;
+}
+.advantages-description {
+    font-size: 18px;
+    line-height: 21px;
+}
+.advantages-item-alternative {
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+.advantages-other-background {
+    background-color: #ffffff;
+}
+.advantage-one {
+    background-color: #ffffff;
+}
+.home {
+    background-image: url(../images/home.svg);
+    background-repeat: no-repeat;
+    background-color: #F0F6FA;
+    color: #333333;
+}
+.goods {
+    background-color:#F0F6FA;
+    color:#333333;
+    background-image: url(../images/goods.svg);
+    background-repeat: no-repeat;
+}
+.food {
+    background-image: url(../images/food.svg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #333333;
+}
+.advantage-another-color {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.search-hotel-form {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #83B3D3;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 26px;
+}
+.search-hotel-form-catalog {
+    background-image: none;
+    background-color: #ffffff;
+}
+.description-catalog {
+    color: rgba(51, 51, 51, 1);
+}
+.subscription-form {
+    color: rgba(0,0,0,1);
+}
+.button {
+    color:white;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+
+.phone {
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 40px;
+    color: rgba(0,0,0,1);
+}
+.filter {
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #83B3D3;
+    color: #ffffff;
+}
+.hotels-filter-title {
+    font-size: 20px;
+    line-height: 26px;
+}
+.hotels-filter-list {
+    font-size: 18px;
+    line-height: 21px;
+}
+.number-hotels {
+    font-size: 30px;
+    line-height: 36px;
+}
+.hotels-card-title {
+    font-size: 24px;
+    line-height: 28px;
+}
+.type-and-price {
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 400px;
+}
+.rating {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 400px;
+}
+
+.about {
+    background-color: rgba(117, 97, 87, 1);
+}
+.favourite {
+    background-color: rgba(130, 179, 211, 1);
+}
+.favourite-checked {
+    background-color: rgba(125, 181, 79, 1);
+}
+.pagination-link {
+    background-color: rgba(130, 179, 211, 1);
+    font-weight:700;
+    line-height: 36px;
+    color: #ffffff;
+}
+.subscription-button {
+    background-color: rgba(130, 179, 211, 1);
+}
+.search-button {
+    background-color: rgba(117, 97, 87, 1);
+}
+.button-want {
+    background-color: rgba(117, 97, 87, 1);
+}
+.apply {
+    background-color: rgba(130, 179, 211, 1);
+}
+.select-control {
+    font-size: 18px;
+    line-height: 21px;
+    color:rgba(51, 51, 51, 1)
+}
