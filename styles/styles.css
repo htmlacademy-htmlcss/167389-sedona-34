@@ -75,7 +75,7 @@ body {
     background-color: #ffffff;
 }
 .home {
-    background-image: url(../images/home.svg);
+    background-image: url("../images/home.svg");
     background-repeat: no-repeat;
     background-color: #F0F6FA;
     color: #333333;
@@ -83,11 +83,11 @@ body {
 .goods {
     background-color:#F0F6FA;
     color:#333333;
-    background-image: url(../images/goods.svg);
+    background-image: url("../images/goods.svg");
     background-repeat: no-repeat;
 }
 .food {
-    background-image: url(../images/food.svg);
+    background-image: url("../images/food.svg");
     background-repeat: no-repeat;
     background-color: #ffffff;
     color: #333333;
