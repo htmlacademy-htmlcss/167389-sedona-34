@@ -46,7 +46,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="menu">
               <li class="menu-item">
-                <a class="item visibilly-hidden" href="index.html">На главную</a>
+                <a class="item visually-hidden" href="index.html">На главную</a>
               </li>
               <li class="menu-item">
                 <a class="item">Гостиницы</a>
@@ -139,6 +139,7 @@
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
+          <div class="search-buttons">
           <a href="#" class="button button-checked card">
             <span class="visually-hidden">Карточки</span>
           </a>
@@ -148,6 +149,7 @@
           <a href="#" class="button list">
             <span class="visually-hidden">Список</span>
           </a>
+          </span>
         </section>
         <ul class="hotels-cards-list">
           <li class="hotels-card">
@@ -217,40 +219,42 @@
             </div>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination current">1</a>
-          </li>
-          <li>
-            <a class="pagination-link">2</a>
-          </li>
-          <li>
-            <a class="pagination-link">3</a>
-          </li>
-          <li>
-            <a class="pagination-link">4</a>
-          </li>
-          <li>
-            <a class="pagination-link">...</a>
-          </li>
-          <li>
-            <a class="pagination-link">10</a>
-          </li>
-        </ul>
-        <p>Гостиниц на странице:</p>
-        <select class="select-control" aria-label="Гостиниц на странице:">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option selected value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
+        <div class="main-bottom">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link">10</a>
+            </li>
+          </ul>
+          <p class="hotels-list">Гостиниц на странице:</p>
+          <select class="select-control-numbers" aria-label="Гостиниц на странице:">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option selected value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
       </main>
       <footer class="main-footer">
-        <form class="search-hotel-form search-hotel-form-catalog" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="title">Подпишитесь на рассылку</h2>
-          <p class="description description-catalog">
+        <form class="search-hotel-fo rm search-hotel-form-catalog" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="title title-subscription">Подпишитесь на рассылку</h2>
+          <p class="description description-subscription">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <input type="text" name="subscription-form" value="Ваш e-mail" />
@@ -277,13 +281,13 @@
               </li>
             </ul>
           </div>
-          <div class="phone">
+          <div class="phones">
             <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <div class="htmlacademy">
             <a class="htmlacademy" href="htmlacademy.ru">
-              <span class="visually-hidden">
-                <img src="images/HTML-Academy.svg" alt="Html-academy лого" width="115" height="33">Htmlacademy</span>
+              <span class="visually-hidden">Htmlacademy</span>
+                <img src="images/HTML-Academy.svg" alt="Html-academy лого" width="115" height="33">
             </a>
           </div>
         </section>
