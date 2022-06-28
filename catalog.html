@@ -128,8 +128,13 @@
                   </li>
                 </ul>
               </fieldset>
+              <fieldset class="hotels-filter-group price-filter">
+                <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+              </fieldset>
+              <fieldset class="hotels-filter-group buttons-filter">
               <button class="apply button" type="submit">Применить</button>
               <button class="reset" type="reset">Сбросить</button>
+              </fieldset>
             </form>
           </section>
         </div>
@@ -156,14 +161,13 @@
             <a class="hotels-class-link" href="#">
               <img class="hotels-card-image" src="images/hotel/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="211">
             </a>
-            <h3 class="hotels-card-title"><a class="hotels-card-title" href="#">Amara Resort & Spa</a></h3>
-            <dl class="type-and-price">
-              <dt class="type-hotels">Гостиница</dt>
-              <dd class="price">От 4000 ₽</dd>
-            </dl>
-            <a class="about button button-brown" href="#">подробнее</a>
-            <button class="button favourite" type="submit">в избранное</button>
-            <div class="stars-hotel">
+            <h3 class="hotels-card-title">
+              <a class="hotels-card-title" href="#">Amara Resort & Spa</a></h3>
+            <div class="hotels-info">
+              <div class="type-hotels">Гостиница</div>
+              <div class="price">От 4000 ₽</div>
+              <a class="button button-brown about" href="#">подробнее</a>
+              <button class="favourite button" type="submit">в избранное</button>
               <div class="image-hotel"></div>
               <div class="rating">Рейтинг: 8,5</div>
             </div>
@@ -175,13 +179,11 @@
             <h3 class="hotels-card-title">
               <a class="hotels-card-title" href="#">Villas at Poco Diablo</a>
             </h3>
-            <dl class="type-and-price">
-              <dt class="type-hotels">Гостиница</dt>
-              <dd class="price">От 5000 ₽</dd>
-            </dl>
-            <a class="about button" href="#">подробнее</a>
-            <button class="favourite-checked button" type="submit">в избранное</button>
-            <div class="stars-hotel">
+            <div class="hotels-info">
+              <div class="type-hotels">Гостиница</div>
+              <div class="price">От 5000 ₽</div>
+              <a class="button about" href="#">подробнее</a>
+              <button class="favourite-checked button" type="submit">в избранное</button>
               <div class="image-hotel"></div>
               <div class="rating">Рейтинг: 9,2</div>
             </div>
@@ -191,13 +193,11 @@
               <img class="hotels-card-image" src="images/hotel/hotel-3.jpg" alt="Desert Quail Inn" width="300" height="211">
             </a>
             <h3 class="hotels-card-title"><a class="hotels-card-title" href="#">Desert Quail Inn</a></h3>
-            <dl class="type-and-price">
-              <dt class="type-hotels">Гостиница</dt>
-              <dd class="price">От 2500 ₽</dd>
-            </dl>
-            <a class="about button" href="#">подробнее</a>
-            <button class="favourite button" type="submit">в избранное</button>
-            <div class="stars-hotel">
+            <div class="hotels-info">
+              <div class="type-hotels">Гостиница</div>
+              <div class="price">От 2500 ₽</div>
+              <a class="about button" href="#">подробнее</a>
+              <button class="favourite button" type="submit">в избранное</button>
               <div class="image-hotel"></div>
               <div class="rating">Рейтинг: 6,9</div>
             </div>
@@ -207,13 +207,11 @@
               <img class="hotels-card-image" src="images/hotel/hotel-4.jpg" alt="GreenTree Inn" width="300" height="211">
             </a>
             <h3 class="hotels-card-title"><a class="hotels-card-title" href="#">GreenTree Inn</a></h3>
-            <dl class="type-and-price">
-              <dt class="type-hotels">Гостиница</dt>
-              <dd class="price">От 1500 ₽</dd>
-            </dl>
-            <a class="about button" href="#">подробнее</a>
-            <button class="favourite button" type="submit">в избранное</button>
-            <div class="stars-hotel">
+            <div class="hotels-info">
+              <div class="type-hotels">Гостиница</div>
+              <div class="price">От 1500 ₽</div>
+              <a class="about button" href="#">подробнее</a>
+              <button class="favourite button" type="submit">в избранное</button>
               <div class="image-hotel"></div>
               <div class="rating">Рейтинг: 5,0</div>
             </div>
@@ -252,13 +250,15 @@
         </div>
       </main>
       <footer class="main-footer">
-        <form class="search-hotel-fo rm search-hotel-form-catalog" action="https://echo.htmlacademy.ru" method="post">
+        <form class="search-hotel-form-catalog" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="title title-subscription">Подпишитесь на рассылку</h2>
           <p class="description description-subscription">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <input type="text" name="subscription-form" value="Ваш e-mail" />
-          <button class="subscription-button button" type="button">Подписаться</button>
+          <div class="subscription">
+            <input type="text" name="subscription-form" class="subscription-form" value="Ваш e-mail" />
+            <button class="subscription-button button" type="button">Подписаться</button>
+          </div>
         </form>
         <section class="footer-bottom">
           <div class="footer-social">
