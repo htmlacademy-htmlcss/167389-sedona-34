@@ -92,6 +92,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 28px;
+  position: relative;
+}
+
+.favorite-number {
+  content: "";
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  left: 65%;
+  top: 24%;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 13px;
+  justify-content: center;
+  color: #ffffff;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link {
