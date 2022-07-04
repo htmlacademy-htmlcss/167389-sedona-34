@@ -87,41 +87,56 @@ body {
   text-decoration: none;
   text-alig n: center;
   display: block;
+  position: relative;
 }
 
- {
-   border-bottom: 2px solid #756257;
-   padding-bottom: 17px;
+.navigation-link:hover::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 100%;
+  border: 2px solid #746257;
+  bottom: -19px;
+  left: 0;
 }
 
+.link-catalog::after,
+.link-home::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 100%;
+  border: 2px solid #746257;
+  bottom: -19px;
+  left: 0;
+}
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images/favorite.png");
+  background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link::after {
-  content: "12";
+.number-favorite {
   position:absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #7DB54F;
-  left: 65%;
-  top:-5px;
+  left: 66%;
+  top:-6px;
   font-family: inherit;
   font-size: 10px;
   line-height: 13px;
-  display: inline-block;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   color: #ffffff;
+  display: flex;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images/search.png");
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 22px;
@@ -134,20 +149,21 @@ body {
   background-repeat: no-repeat;
   margin-top: -5px;
   position: relative;
+  padding-top: 52px;
+  padding-bottom: 82px;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
-  padding-top: 52px;
-  padding-bottom: 82px;
+
 }
 .welcome::after {
   position: absolute;
   content: "";
-  top: 429px;
+  bottom: 0;
   left: 0;
-  height: 100%;
+  height: 56px;
   width: 100%;
   background-image: url("../images/image-bottom.svg");
   background-size: 100% auto;
@@ -483,7 +499,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .filter {
   background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
@@ -661,7 +676,18 @@ body {
   list-style: none;
   margin: 56px 73px 66px 71px;
   padding: 0;
+  position: relative;
 }
+
+.hotels-card-list::after {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  content: "";
+  bottom: 0;
+}
+
 
 .hotels-card {
   margin: 0;
