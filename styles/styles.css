@@ -537,9 +537,7 @@ body {
   position: absolute;
   left: 12px;
 }
-.menu-item:nth-child(2) {
-  margin-left: 25px;
-}
+
 .item {
   font-size: 16px;
   line-height: 21px;
@@ -549,10 +547,6 @@ body {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-}
-
-.sorting {
-
 }
 
 .hotels-filter-group {
@@ -672,22 +666,21 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  row-gap:
   list-style: none;
-  margin: 56px 73px 66px 71px;
+  margin: 56px 73px 30px 71px;
   padding: 0;
+  padding-bottom: 66px;
   position: relative;
 }
 
-.hotels-card-list::after {
+.hotels-cards-list::after {
   position: absolute;
   height: 0;
   width: 100%;
   border: 1px solid #E6E6E6;
   content: "";
-  bottom: 0;
+  bottom: -2px;
 }
-
 
 .hotels-card {
   margin: 0;
@@ -791,6 +784,7 @@ body {
   display: flex;
   margin: 30px 71px 25px 73px;
 }
+
 
 .pagination {
   display: flex;
