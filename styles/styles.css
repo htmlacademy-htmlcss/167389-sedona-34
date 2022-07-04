@@ -85,9 +85,15 @@ body {
   margin-right: 34px;
   color: inherit;
   text-decoration: none;
-  text-align: center;
+  text-alig n: center;
   display: block;
 }
+
+ {
+   border-bottom: 2px solid #756257;
+   padding-bottom: 17px;
+}
+
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link {
   background-image: url("../images/favorite.png");
@@ -96,19 +102,21 @@ body {
   position: relative;
 }
 
-.favorite-number {
-  content: "";
+.navigation-user .navigation-item:nth-child(2) .navigation-link::after {
+  content: "12";
   position:absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #7DB54F;
   left: 65%;
-  top: -6px;
+  top:-5px;
   font-family: inherit;
   font-size: 10px;
   line-height: 13px;
+  display: inline-block;
   justify-content: center;
+  align-content: center;
   color: #ffffff;
 }
 
