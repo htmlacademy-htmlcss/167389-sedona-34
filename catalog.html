@@ -75,7 +75,9 @@
                         type="checkbox"
                         name="bass"
                         checked
-                      />Бассейн
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
@@ -85,7 +87,9 @@
                         type="checkbox"
                         name="parking"
                         checked
-                      />Парковка
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
@@ -94,7 +98,9 @@
                         class="control-input"
                         type="checkbox"
                         name="wi-fi"
-                      />Wi-Fi
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -109,7 +115,9 @@
                         type="radio"
                         name="hotels"
                         checked
-                      />Гостиница
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
@@ -118,8 +126,9 @@
                         class="control-input"
                         type="radio"
                         name="motels"
-                        checked
-                      />Мотель
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="hotels-filter-item">
@@ -128,13 +137,31 @@
                         class="control-input"
                         type="radio"
                         name="apartments"
-                      />Апартаменты
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="hotels-filter-group price-filter">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+                <div class="price-hotels-filter">
+                  <input class="price-min" type="number" id="price-min" name="price-min" placeholder="0">
+                  <label class="price-left" for="price-min" >от</label>
+                  <label class="price-right" for="price-max" >до</label>
+                  <input class="price-max" type="number" id="price-max" name="price-max" placeholder="9000">
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 216px;">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="hotels-filter-group buttons-filter">
               <button class="apply button button-blue" type="submit">Применить</button>
@@ -145,10 +172,12 @@
         </div>
         <section class="sorting-search">
           <h2 class="number-hotels">Найдено гостиниц: 38</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+          <div class="type-price">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
           <div class="search-buttons">
           <a href="#" class="button button-checked card">
             <span class="visually-hidden">Карточки</span>
@@ -237,14 +266,16 @@
             </li>
           </ul>
           <p class="hotels-list">Гостиниц на странице:</p>
-          <select class="select-control-numbers" aria-label="Гостиниц на странице:">
-            <option value="1" href="#">1</option>
-            <option value="2" href="#">2</option>
-            <option value="3" href="#">3</option>
-            <option selected value="4" href="#">4</option>
-            <option value="5" href="#">5</option>
-            <option value="6" href="#">6</option>
-          </select>
+          <div class="hotels-on-page">
+            <select class="select-control" aria-label="Гостиниц на странице:">
+              <option value="1" href="#">1</option>
+              <option value="2" href="#">2</option>
+              <option value="3" href="#">3</option>
+              <option selected value="4" href="#">4</option>
+              <option value="5" href="#">5</option>
+              <option value="6" href="#">6</option>
+            </select>
+          </div>
         </div>
       </main>
       <footer class="main-footer">
