@@ -495,6 +495,7 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
+
 .modal-container {
   z-index:2;
   position: fixed;
@@ -505,38 +506,35 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 .modal {
-  wid  th: 576px;
-  hei ght: 569px;
+  width: 576px;
+  he ight: 569px;
   position: relative;
   margin: auto;
-  padding: 54px 70px 70px 70px;
-  dis play: grid;
-
+  padding: 62px 70px 70px 70px;
 }
 
 .modal-auth {
-  width:575px;
-  grid-templ ate-columns: repeate(2, 1fr);
   background-color: #ffffff;
   border-radius: 30px;
 }
-
-.modal-header {
+.auth-form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin:0;
-  margin-bottom: 54px;
+  flex-wrap: wrap;
 }
-
 .search-hotel-title {
+  margin:0;
+  margin-bottom: 63px;
+  margin-right: 53px;
+  padding: 0;
+  text-align: start;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
 }
-
 .modal-close-button {
+  position: absolute;
+  top: 54px;
+  right: 70px;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -547,62 +545,54 @@ body {
   border-radius: 50%;
   border: none;
 }
-  .date-search {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: "date-1 day-in day-in day-in"
-                        "date-1 prompt-1 prompt-1 prompt-1"
-                        "date-2 day-out day-out day-out"
-                        "date-2 prompt-2 prompt-2 prompt-2"
-                        "adults number-person-1 children number-person-2"
-                        "button-modal button-modal button-modal button-modal";
-    column-gap: 36px;
-    row-ga p: 5px;
-  }
-.date-1 {
-  grid-area: date-1;
-}
-.day-in {
-  grid-area: day-in;
-}
-.prompt-1 {
-  grid-area: prompt-1;
-  color: rgba(255, 87,87,1);
-}
-.date-2 {
-  grid-area: date-2;
-}
-.day-out {
-  grid-area: day-out;
-}
-.prompt-2 {
-  grid-area: prompt-2;
-  width: 420px;
-}
-.button-modal {
-  grid-area: button-modal;
-}
-
 .modal-title {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
   font-size: 20px;
   line-height: 26px;
-  font-weight: 700;
-  font-style: bold;
-  text-align: start;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .search-hotel-date {
+  font-style:normal;
+  margin- left: 39px;
+  padding: 15px 50px 14px 20px;
+  width:350px;
   font-size: 18px;
   line-height: 21px;
-  padding:
+  align-items: center;
+  font-family: inherit;
+  border: none;
+  background-color: #f2f2f2;
 }
 .prompt {
-    font-size: 16px;
-    line-height: 21px;
-    margin: 0;
-    padding: 0;
-    text-align:start;
+  font-weight:400;
+  position: absolute;
+  margin: 0;
+  padding:0;
+  font-size: 16px;
+  line-height: 21px;
+  top: 57px;
+  left: 156px;
+  width:
+}
+
+.prompt-1 {
+  color: #ff5757;
+}
+
+.calendar {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 20px;
+  right:20px;
+  background-image: url("../images/calendar.svg");
+  background-repeate: no-repeate;
+  border: none;
 }
 
 .button-modal {
@@ -612,9 +602,100 @@ body {
   line-height: 36px;
   font-family: inherit;
   background-color: #83B3D3;
-  margin-top: 40px;
   border: none;
   border-radius: 10px;
+}
+
+.adults {
+  width: 288px;
+  pos ition: relative;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.children {
+  position: relative;
+  width: 230px;
+  margin-left: 58px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.tooltip {
+  border: none;
+  background-color: #333333;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.toltip-icon {
+  width: 100%;
+  height: 100%;
+  colo =r:#333333;
+  display: block;
+}
+.tooltip-text {
+  display: block;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 15px 18px 18px 22px;
+  width:256px;
+  background-color: #333333;
+  color: #ffffff;
+  text-aligh:left;
+  display:none;
+}
+
+.number-person {
+  display: flex;
+  width: 133px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.minus {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  background-image: url("../images/minus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.plus {
+  width: 40px;
+  height: 50px;
+  background-color: #f2f2f2;
+  background-image: url("../images/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.number-person-input {
+  appearance: textfield;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  font-family: inherit;
 }
 
 .main-inner {
@@ -816,11 +897,11 @@ body {
 }
 
 .price-left {
-   position: absolute;
-   content: "";
-   top: 14px;
-   left: 113px;
-   color:rgba(255, 255, 255, 0.3);
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 113px;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .price-right {
