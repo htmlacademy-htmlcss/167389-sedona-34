@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
   <body>
     <div class="container">
@@ -25,12 +26,12 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link search-icon-button" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link favorite-icon-button" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="number-favorite">12</span>
               </a>
@@ -113,6 +114,7 @@
                       <input
                         class="control-input"
                         type="radio"
+                        id="radioButton"
                         name="hotels"
                         checked
                       />
@@ -125,7 +127,8 @@
                       <input
                         class="control-input"
                         type="radio"
-                        name="motels"
+                        id="radioButton"
+                        name="hotels"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
@@ -136,7 +139,8 @@
                       <input
                         class="control-input"
                         type="radio"
-                        name="apartments"
+                        id="radioButton"
+                        name="hotels"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
