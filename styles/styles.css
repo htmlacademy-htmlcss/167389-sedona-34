@@ -840,7 +840,9 @@ body {
   left: 12px;
 }
 
-.item {
+.item,
+.item:focus,
+.index-page-icon:focus {
   font-size: 16px;
   line-height: 21px;
   margin: 0;
@@ -849,6 +851,16 @@ body {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+}
+
+.item:hover,
+.index-page-icon:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.item:active,
+.index-page-icon:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-filter-group {
