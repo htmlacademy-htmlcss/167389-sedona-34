@@ -461,7 +461,7 @@ body {
 }
 
 .button-footer:active .social-icon {
-  color:rgba(104, 162, 202, 0.3);
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .phone {
@@ -539,7 +539,7 @@ body {
 }
 
 .search-hotel-title {
-  margin:0;
+  margin: 0;
   margin-bottom: 63px;
   margin-right: 53px;
   padding: 0;
@@ -610,10 +610,10 @@ body {
 .search-hotel-date:active {
   background-color: #ffffff;
   border: 2px solid #000000;
-  margin:-2px
+  margin: -2px
 }
 .prompt {
-  font-weight:400;
+  font-weight: 400;
   position: absolute;
   margin: 0;
   padding: 0;
