@@ -11,7 +11,7 @@
       <header class="main-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны" />
+            <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны"/>
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -49,8 +49,8 @@
             <ul class="menu">
               <li class="menu-item">
                 <a class="item" href="index.html">
-                  <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z" fill="#fff"/>
+                  <svg class="index-page-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z"/>
                   </svg>
                   <span class="visually-hidden">Вернуться на главную страницу</span>
                 </a>
@@ -117,6 +117,7 @@
                         type="radio"
                         id="hotel"
                         name="hotels"
+                        value="hotel"
                         checked
                       />
                       <span class="control-mark"></span>
@@ -130,6 +131,7 @@
                         type="radio"
                         id="motel"
                         name="hotels"
+                        value="motel"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
@@ -142,6 +144,7 @@
                         type="radio"
                         id="apartments"
                         name="hotels"
+                        value="apartments"
                       />
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
@@ -159,18 +162,18 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 216px;">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
               </fieldset>
               <fieldset class="hotels-filter-group buttons-filter">
-              <button class="apply button button-blue" type="submit">Применить</button>
-              <button class="reset" type="reset">Сбросить</button>
+                <button class="apply button button-blue" type="submit">Применить</button>
+                <button class="reset" type="reset">Сбросить</button>
               </fieldset>
             </form>
           </section>
@@ -285,13 +288,13 @@
       </main>
       <footer class="main-footer">
         <form class="search-hotel-form search-hotel-form-catalog" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="title title-subscription">Подпишитесь на рассылку</h2>
+          <h2 class="title title-subscription title-subscription-catalog">Подпишитесь на рассылку</h2>
           <p class="description description-subscription">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <div class="subscription">
             <input type="text" name="subscription-form" class="subscription-form" value="Ваш e-mail" />
-            <button class="subscription-button button button-blue" type="button">Подписаться</button>
+            <button class="subscription-button button button-blue" type="submit">Подписаться</button>
           </div>
         </form>
         <section class="footer-bottom">
