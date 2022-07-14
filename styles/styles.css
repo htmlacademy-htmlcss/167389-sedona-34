@@ -910,7 +910,7 @@ body {
 .hotels-filter {
   display: grid;
   grid-template-columns: repeat(4, min-content);
-  gap: 71px;
+  gap: 70px;
 }
 
 .price-filter {
@@ -920,7 +920,7 @@ body {
 .buttons-filter {
   align-self: end;
   text-align: center;
-  margin-right: -2px;
+  margin-righ t: -2px
 }
 
 .sorting-search {
@@ -933,6 +933,12 @@ body {
 
 .hotels-filter-item {
   margin: 0;
+}
+
+.hotels-filter input,
+.hotels-filter textarea {
+font-family: inherit;
+margin: 0;
 }
 
 .control {
@@ -981,7 +987,7 @@ body {
 }
 
 .control-label {
-  padding-left: 15px;
+  padding-left: 22px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1016,7 +1022,7 @@ body {
   display: block;
   background-color: transparent;
   color: #ffffff;
-  padding: 13px 52px 10px 17px;
+  padding: 12px 51px 11px 18px;
   width: 72px;
   border: 2px solid #ffffff;
   font-size: 18px;
@@ -1047,7 +1053,7 @@ body {
   box-sizing: border-box;
   background-color: transparent;
   color: #ffffff;
-  padding: 13px 36px 10px 15px;
+  padding: 12px 35px 11px 16px;
   width: 144px;
   border: 2px solid #ffffff;
   border-left: 1px solid #ffffff;
